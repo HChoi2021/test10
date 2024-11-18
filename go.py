@@ -36,9 +36,5 @@ if submit_button:
             time.sleep(1)
             my_bar.empty()
 
-            # 페이지 전환
-            st.query_params(page="bike")  # 1. 페이지 전환을 위한 쿼리 파라미터 설정
-            st.experimental_user(page="go")  # 2. 앱을 리로드하여 새로운 쿼리 파라미터를 적용
-
         else:
             st.error("아이디 또는 비밀번호가 일치하지 않습니다.")
